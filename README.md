@@ -7,4 +7,5 @@
  - Local-offline Development Environment
  - TypeScript Language
 
- More info in package.json
+
+More info in package.json
