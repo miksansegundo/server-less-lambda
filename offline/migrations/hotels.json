@@ -1,0 +1,38 @@
+{
+	"Table": {
+		"TableName": "hotels",
+		"KeySchema": [
+			{
+				"AttributeName": "id",
+				"KeyType": "HASH"
+			}
+		],
+		"AttributeDefinitions": [
+			{
+				"AttributeName": "id",
+				"AttributeType": "S"
+			}
+		],
+		"ProvisionedThroughput": {
+			"ReadCapacityUnits": 1,
+			"WriteCapacityUnits": 1
+		}
+	},
+	"Seeds": [
+		{
+			"id": "c796d733-9779-45c5-a130-20fd1fd0b652",
+	        "name": "Hotel 1",
+	        "isBookable": true
+		},
+        {
+			"id": "43fca9c6-91f4-4593-9e5c-fac85beab5a7",
+			"name": "Hotel 2",
+			"isBookable": true
+		},
+        {
+			"id": "42828c93-afb5-4761-ba55-becfda40b11b",
+			"name": "Hotel 3",
+			"isBookable": false
+		}
+	]
+}
